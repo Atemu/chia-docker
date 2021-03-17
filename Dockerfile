@@ -19,4 +19,4 @@ RUN cd chia-blockchain && \
     sh install.sh && \
     chmod +x /usr/local/bin/docker-entrypoint.sh
 
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["/usr/local/bin/docker-entrypoint.sh"]
