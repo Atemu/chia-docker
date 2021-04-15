@@ -14,7 +14,7 @@ RUN apt-get update && \
     apt-get install python3.8-venv python3.8-distutils sudo git lsb-core -y
 RUN git clone https://github.com/Chia-Network/chia-blockchain.git && \
     cd chia-blockchain \
-    && git checkout tags/1.0.3
+    && git checkout tags/1.0.5
 RUN cd chia-blockchain && \
     sh install.sh && \
     chmod +x /usr/local/bin/docker-entrypoint.sh
